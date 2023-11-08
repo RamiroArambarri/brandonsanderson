@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--Para Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!--Estilos personalizados-->
+	<link href="../../estilos.css" rel="stylesheet">
+	
+	<title>Fantasía</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary nav-underline">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link navbar-brand" aria-current="page" href="../../index.html">Brandon Sanderson</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Libros
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">Fantasía</a></li>
+							<li><a class="dropdown-item" href="../cs-ficcion/cs-ficcion.html">Ciencia ficción</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../cosmere/cosmere.html">El <em>Cosmere</em></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../mas-sanderson/mas-sanderson.html">Más sobre Brandon Sanderson</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../contactanos/contactanos.html">Contáctanos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../../creditos/creditos.html">Créditos</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<!--Los tres botones para seleccionar el carrusel-->
+		<div id="banner-libros">
+			<div class="container">
+				<div class="row">
+					<div class="seccion-libros col-md-4">
+						<div id="saga-nacidos" onclick="seleccion('#carrusel-nacidos',this);"><h2 class="titulo-seccion">Saga <em>Nacidos de la Bruma</em></h2></div>
+					</div>
+					<div class="seccion-libros col-md-4">
+						<div id="saga-archivo" onclick="seleccion('#carrusel-archivo',this);"><h2 class="titulo-seccion">Saga <em>El Archivo<br>de las tormentas</em></h2></div>
+					</div>
+					<div class="seccion-libros col-md-4">
+						<div id="otros" onclick=" seleccion('#carrusel-otros',this);"><h2 class="titulo-seccion">Otros libros de fantasía</h2></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Los carruseles-->
+		<div id="carrusel-nacidos" class="swiffy-slider slider-item-show4 slider-item-reveal slider-item-snapstart slider-nav-autohide slider-item-first-visible col-3">
+			<ul class="slider-container">
+				<li><img class="producto" src="imagenes/el-imperio-final.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-imperio-final"></li>
+				<li><img class="producto" src="imagenes/el-pozo-de-la-ascencion.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-pozo-de-la-ascencion"></li>
+				<li><img class="producto" src="imagenes/el-heroe-de-las-eras.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-heroe-de-las-heras"></li>
+				<li><img class="producto" src="imagenes/aleacion-de-ley.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#aleacion-de-ley"></li>
+				<li><img class="producto" src="imagenes/sombras-de-identidad.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#sombras-de-identidad"></li>
+				<li><img class="producto" src="imagenes/brazales-de-duelo.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#brazales-de-duelo"></li>
+			</ul>
+
+			<button type="button" class="slider-nav"></button>
+			<button type="button" class="slider-nav slider-nav-next"></button>
+
+			<div class="slider-indicators">
+				<button class="active"></button>
+				<button></button>
+				<button></button>
+			</div>
+		</div>
+		<div >
+			<div id="carrusel-archivo" class="swiffy-slider  slider-item-show4 slider-item-reveal slider-item-snapstart slider-nav-autohide slider-item-first-visible col-3">
+				<ul class="slider-container">
+					<li><img class="producto" src="imagenes/el-camino-de-los-reyes.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-camino-de-los-reyes"></li>
+					<li><img class="producto" src="imagenes/palabras-radiantes.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#palabras-radiantes"></li>
+					<li><img class="producto" src="imagenes/juramentada.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#juramentada"></li>
+					<li><img class="producto" src="imagenes/el-ritmo-de-la-guerra.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-ritmo-de-la-guerra"></li>
+				</ul>
+
+				<button type="button" class="slider-nav"></button>
+				<button type="button" class="slider-nav slider-nav-next"></button>
+
+			</div>
+			<div id="carrusel-otros" class="swiffy-slider slider-item-show4 slider-item-reveal slider-item-snapstart slider-nav-autohide slider-item-first-visible col-3">
+				<ul class="slider-container">
+					<li><img class="producto" data-bs-toggle="modal" data-bs-target="#el-aliento-de-los-dioses" src="imagenes/el-aliento-de-los-dioses.jpg" alt="Portada de El aliento de los dioses"></li>
+					<li><img class="producto" data-bs-toggle="modal" data-bs-target="#trenza-del-mar-esmeralda" src="imagenes/trenza-del-mar-esmeralda.jpg" alt="Portada de Trenza del mar esmeralda"></li>
+					<li><img class="producto" src="imagenes/yumi-y-el-pintor-de-pesadillas.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#yumi-y-el-pintor-de-pesadillas"></li>
+					<li><img class="producto" src="imagenes/el-hombre-iluminado.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-hombre-iluminado"></li>
+					<li><img class="producto" src="imagenes/el-rithmatista.jpg" alt="Portada de El Imperio final" data-bs-toggle="modal" data-bs-target="#el-rithmatista"></li>
+				</ul>
+
+				<button type="button" class="slider-nav"></button>
+				<button type="button" class="slider-nav slider-nav-next"></button>
+
+				<div class="slider-indicators">
+					<button class="active"></button>
+					<button></button>
+					<button></button>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<p>Esta página fue creada por Ramiro Arambarri con propósitos puramente académicos. Todas las imágenes de esta página son propiedad de Brandon Sanderson</p>
+	</footer>
+
+	<!--Las ventanas que se abren al elegir un libro-->
+
+	<div class="modal fade" id="el-imperio-final" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El imperio final</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-imperio-final.jpg" alt="El imperio final">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Durante mil años han caído las cenizas y nada florece. Durante mil años los skaa han sido esclavizados y viven sumidos en un miedo inevitable. Durante mil años el Lord Legislador reina con un poder absoluto gracias al terror, a sus poderes e inmortalidad. Le ayudan «obligadores» e «inquisidores», junto a la poderosa magia de la «alomancia». Pero los nobles, con frecuencia, han tenido trato sexual con jóvenes skaa y, aunque la ley lo prohíbe, algunos de sus bastardos han sobrevivido y heredado los poderes alománticos: son los «nacidos de la bruma» (mistborns). Ahora, Kelsier, el «superviviente», el único que ha logrado huir de los Pozos de Hathsin, ha encontrado a Vin, una pobre chica skaa con mucha suerte... Tal vez los dos unidos a la rebelión que los skaa intentan desde hace mil años puedan cambiar el mundo y la atroz dominación del Lord Legislador.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8498726131" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="el-pozo-de-la-ascencion" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El pozo de la ascención</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-pozo-de-la-ascencion.jpg"  alt="El pozo de la ascención">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								
+								El Pozo de la Ascensión es el segundo volumen de la saga «Nacidos de la Bruma [Mistborn]», una obra iniciada con El imperio final y parte imprescindible del Cosmere, el universo destinado a dar forma a la serie más extensa y fascinante jamás escrita en el ámbito de la fantasía épica.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson-ebook/dp/B00AR07H9A" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="el-heroe-de-las-heras" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El heroe de las eras</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-heroe-de-las-eras.jpg"  alt="El heroe de las eras">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Durante los últimos mil años, han caído las cenizas y nada florece. Durante mil años, los skaa han sido esclavizados y han vivido sumidos en un miedo inevitable. Durante mil años, el Lord Legislador ha reinado con un poder absoluto gracias al terror y a la omnipresente magia de la "alomancia". Kelsier, el "Superviviente", el único que logró huir de los Pozos de Hathsin, encontró a Vin, una pobre chica skaa con mucha suerte. Los dos unidos a la rebelión que los skaa intentaban desde hace mil años vencieron al Lord Legislador. Pero matar a éste fue la parte sencilla. El verdadero desafío será sobrevivir a las consecuencias de su caída. En El héroe de las Eras se comprende el porqué de la niebla y las cenizas, la justificación de las tenebrosas acciones del Lord Legislador y la naturaleza del Pozo de la Ascensión. Todo resulta atado -y bien atado- cuando Vin y el Rey Elend buscan los últimos escondites de recursos del Lord Legislador y descubren el peligro que acecha a la humanidad. Podrán detenerlo a tiempo? Tras el gran éxito mundial de Elantris, Sanderson logra repetir la hazaña. La trilogía Nacidos de la bruma es una excepcional muestra de una nueva fantasía épica con magia, leyenda y todo tipo de misterios.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson-ebook/dp/B00CH2TR7Q" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="aleacion-de-ley" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Aleación de ley</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/aleacion-de-ley.jpg"  alt="Aleación de ley">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Aleación de ley es la secuela de la primera trilogía de la saga «Nacidos de la Bruma [Mistborn]», una obra iniciada con El imperio final y parte imprescindible del Cosmere, el universo destinado a dar forma a la serie más extensa y fascinante jamás escrita en el ámbito de la fantasía épica.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8413140234" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="sombras-de-identidad" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Sombras de identidad</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/sombras-de-identidad.jpg"  alt="Sombras de identidad">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								
+								En Sombras de identidad el autor muestra cómo ha ido evolucionando el mundo a medida que la tecnología se mezcla con la magia, la economía crece, la democracia se sostiene con la corrupción, y la religión se convierte en una fuerza cultural en crecimiento, con cuatro de ellas que compiten por la conversión. Esta sociedad optimista pero todavía inestable, se enfrenta a su primer caso de terrorismo, delitos que avivan el odio y el conflicto laboral con el conflicto religioso. Wax y Wayne, con la ayuda de su estimado y brillante Marasi, deben desentrañar una conspiración antes de que la lucha civil encuentre las pistas.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8466658858" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="brazales-de-duelo" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Brazales de duelo</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/brazales-de-duelo.jpg"  alt="Brazales de duelo">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Brazales de Duelo es el sexto libro de la saga «Nacidos de la Bruma [Mistborn]», una obra iniciada con El imperio final y parte imprescindible del Cosmere, el universo destinado a convertirse en la serie más extensa y fascinante jamás escrita en el ámbito de la fantasía épica.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8466659625" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="el-camino-de-los-reyes" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El camino de los reyes</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-camino-de-los-reyes.jpg"  alt="El camino de los reyes">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								
+								El camino de los reyes es el primer volumen de «El Archivo de las Tormentas», el resultado de más de una década de construcción y escritura de universos, convertido en una obra maestra de la fantasía contemporánea en diez volúmenes. Con ella, Brandon Sanderson se postula como el autor del género que más lectores está ganando en todo el mundo.
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8466657665" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="palabras-radiantes" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Palabras radiantes</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/palabras-radiantes.jpg"  alt="Palabras radiantes">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								La aclamada continuación de El camino de los reyes es, como el primer volumen de «El Archivo de las Tormentas», el resultado de más de una década de construcción y escritura de universos, convertida en una obra maestra de la fantasía contemporánea en diez volúmenes. Brandon Sanderson se postula con ella como el autor del género que más lectores está ganando en todo el mundo.
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson-ebook/dp/B014R3O1CS" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="juramentada" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Juramentada</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/juramentada.jpg"  alt="Juramentada">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Juramentada es la aclamada continuación de El camino de los reyes y de Palabras radiantes , y tercera parte de la decalogía «El Archivo de las Tormentas», obra maestra de la fantasía épica que ha coronado la lista de best sellers de The New York Times y ha postulado a Sanderson como el autor de género que más lectores está ganando en todo el mundo.
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8417347003" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="el-ritmo-de-la-guerra" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El ritmo de la guerra</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-ritmo-de-la-guerra.jpg"  alt="El ritmo de la guerra">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								La esperada continuación de Juramentada. Brandon Sanderson, en la cima de su carrera.
+
+								Tras forjar una coalición de resistencia humana contra la invasión enemiga, Dalinar Kholin y sus Caballeros Radiantes llevan un año librando una guerra prolongada y brutal. Ningún bando ha logrado obtener ventaja.
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/guerra-Rhythm-Archivo-Tormentas-Spanish/dp/8417347933/ref=d_pd_sim_sccl_2_2/135-4186214-0409234?pd_rd_w=ed51t&content-id=amzn1.sym.605c465e-a249-4907-abe2-8eda7828e1e9&pf_rd_p=605c465e-a249-4907-abe2-8eda7828e1e9&pf_rd_r=11BSXS3J0BQ18NNH8BMZ&pd_rd_wg=o0CIt&pd_rd_r=2ed9d1d9-7df0-4ecd-90a9-fe434569ddb7&pd_rd_i=8417347933&psc=1" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="el-aliento-de-los-dioses" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El aliento de los dioses</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-aliento-de-los-dioses.jpg"  alt="El aliento de los dioses">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Hace años, el monarca de Idris firmó un tratado con el reino de Hallandren según el cual el rey Dedelin enviaría a su hija mayor, Vivenna, para casarse con Susebron, el rey-dios de Hallabdren. Vivenna ha sido adiestrada durante toda su vida para ser una novia adecuada para Susebron y así cumplir con su deber y ayudar a forjar una paz estable entre los dos reinos. Ese era el plan, pero el monarca de Idris envía a su hija Siri, desobediente e independiente, en lugar de Vivenna.
+
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8466658874" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="trenza-del-mar-esmeralda" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Trenza del mar esmeralda</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/trenza-del-mar-esmeralda.jpg"  alt="El aliento de los dioses">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								En su isla natal sobre un océano verde esmeralda, la única vida que Trenza conoce es sencilla, marcada por el placer de coleccionar las tazas que traen los marineros de tierras lejanas y escuchar las historias que le cuenta su amigo Charlie. Pero cuando el padre de Charlie se lo lleva en barco para buscarle esposa y sucede una catástrofe, Trenza deberá colarse como polizona en un barco y partir en busca de la hechicera que habita en el mortífero mar de Medianoche. Sobre unos océanos de esporas repletos de piratas, ¿podrá Trenza abandonar su tranquila vida y crearse un lugar en un océano donde una sola gota puede significar la muerte instantánea?
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8418037814" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="yumi-y-el-pintor-de-pesadillas" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Yumi y el pintor de pesadillas</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/yumi-y-el-pintor-de-pesadillas.jpg"  alt="Yumi y el pintor de pesadillas">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Yumi viene de una tierra de jardines, meditación y espíritus, mientras que Pintor vive en un mundo de oscuridad, tecnología y pesadillas. Cuando de pronto sus vidas se ven extrañamente entrelazadas, ¿podrán dejar de lado sus diferencias y colaborar para descubrir los misterios de su situación y salvar sus respectivas comunidades de un desastre seguro?
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson-ebook/dp/B0C83X5W7P" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="el-hombre-iluminado" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El hombre iluminado</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-hombre-iluminado.jpg"  alt="El hombre iluminado">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								Hace años tenía compañeros de armas y una causa en la que creer, pero ahora el hombre que se hace llamar Nómada solo conoce la vida a la fuga. Obligado a saltar de un mundo a otro en el Cosmere cada vez que la implacable Brigada Nocturna le gana demasiado terreno, Nómada acaba en un nuevo planeta y de inmediato se ve implicado en la trifulca entre un tirano y los rebeldes que solo pretenden evitar que los conviertan en esclavos sin mente. Y todo bajo la amenaza constante de un amanecer cuyo calor derrite la misma piedra. Incapaz de comprender su idioma, ¿sabrá navegar el conflicto y obtener el suficiente poder para saltar fuera del planeta antes de que su mente o su cuerpo paguen el precio definitivo?
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.es/Hombre-Iluminado-Novela-Secreta-Nova/dp/8419260126" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="el-rithmatista" tabindex="-1">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">El rithmatista</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row align-items-start">
+						<div class="col-md-3 col-sm-12">
+							<img src="imagenes/el-rithmatista.jpg"  alt="El rithmatista">
+						</div>
+						<div class="col-md-9 col-sm-12">
+							<p>
+								
+								Joel quiere ser un Ritmatista y tener el poder de infundir vida a figuras bidimensionales conocidas como los Chalklings. Los Ritmatistas son la única defensa de la humanidad contra los salvajes Chalklings, que ahora son una amenazan para todas las islas americanas. Como hijo de un humilde chalkmaker en la Academia Armedius, Joel sólo puede ver como los estudiantes Ritmatistas aprenden el arte mágico y él haría cualquier cosa para practicarlo. Luego los estudiantes comienzan a desaparecer: secuestrados de sus habitaciones por la noche, dejando rastros de sangre. Asignado para ayudar al profesor que investiga los crímenes, Joel y su amigo Melody se encuentran tras la pista de un descubrimiento inesperado, que cambiará los Ritmaticos y su mundo para siempre.
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="boton-compra" href="https://www.amazon.com/-/es/Brandon-Sanderson/dp/8490701857" target="_blank">Comprar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--Para JQuery-->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<!--Para Swiffy Slider-->
+	<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+	<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+	<!--Para seleccionar el carousel-->
+	<script src="../seleccion.js"></script>
+
+
+
+</body>
+</html>

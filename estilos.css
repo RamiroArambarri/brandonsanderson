@@ -1,0 +1,289 @@
+body {
+	background-color: #961B5E;
+	font-family: calibri;
+	text-align: justify;
+}
+
+.navbar {
+	font-family: bahnschrift;
+	background-color: #961B5E!important;
+	border-bottom: solid #EDD480 4px;
+}
+
+.navbar * {
+		color: whitesmoke!important;
+}
+
+.dropdown-item {
+	color: #961B5E!important;
+}
+
+main {
+	color: whitesmoke;
+}
+
+#banner h1 {
+	font-family: bahnschrift;
+	font-size: 1.5em;
+	color: #EDD480!important;
+}
+
+#banner {
+	min-height: 400px;
+	display: flex;
+	justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    background-color: #961B5E;
+    text-shadow: 0 0 10px black;
+
+    background-image: url("imagenes/banner-sanderson.png");
+	background-position-y: center;
+	background-position-x: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+}
+
+.titulo {
+	font-family: bahnschrift;
+}
+
+.subtitulo{
+	padding: 0 1em 0;
+}
+
+img {
+	width:100%;
+	height:100%;
+	margin: 0;
+}
+
+.bloque {
+	font-size: 1.4em;
+	margin: 2.5em 0 2.5em;
+}
+
+.borde-fino{
+	border: solid #EDD480 2px;
+}
+
+.pie{
+	font-size: 0.5em;
+}
+
+footer {
+	border-top: solid #EDD480 4px;
+	text-align: right;
+	padding: 0 1em 0 0;
+}
+
+a{
+	color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+  .subtitulo{
+  	display: none;
+
+  }
+  #slider-musica{
+  	display:none;
+  }
+  #mute{
+  	display:inline;
+  }
+}
+
+/* Estilos para la página de libros */
+
+.fondo-azul {
+	background-color: #01426C;
+	border: solid #01426C 1em;
+
+}
+
+.producto {
+	max-width: 100%;
+	height: auto;
+}
+
+.slider-container li:hover{
+	position:relative;
+	scale: 0.9;
+	
+}
+
+.slider-container li{
+	padding:18px 40px 18px;
+	transition: 0.2s;
+}
+
+.slider-container li img{
+	border: solid #EDD480 4px;
+	margin: 0 0 1.5em;
+}
+
+
+.seccion-libros {
+	font-family: bahnschrift;
+	text-align: center!important;
+	text-shadow: 0 0 10px black,0 0 10px black,0 0 10px black;
+	margin: 30px 0 7px 0;
+	padding: 35px;
+}
+
+#saga-archivo {
+	background-image: url("libros/fantasia/imagenes/el-camino-de-los-reyes.jpg");
+	background-size: cover;	
+	background-position-y: -230px;
+}
+
+#saga-nacidos {
+	background-image: url("libros/fantasia/imagenes/el-imperio-final.jpg");
+	background-position-y: -30px;
+	background-size: cover;
+}
+
+#otros {
+	background-image: url("libros/fantasia/imagenes/el-aliento-de-los-dioses.jpg");
+	background-size: cover;	
+}
+
+.seccion-libros div {
+	width:100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	height: 200px;
+	line-height: height;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 0 0 30px 0px black, inset 0 0 30px 0px black, inset 0 0 0px 0px black;
+	box-shadow: 0 0 30px 0px rgba(0,0,0,0.4);
+	transition: 0.2s;
+}
+
+.seccion-libros div:hover {
+	scale: 1.15;
+}
+
+#carrusel-archivo {
+	display:none;
+}
+
+#carrusel-nacidos {
+	display:block;
+}
+
+#carrusel-otros {
+	display:none;
+}
+
+
+#secciones {
+	width:90%;
+	margin:0 auto;
+}
+
+.swiffy-slider{
+	margin:0 auto;
+	overflow: hidden;
+}
+
+#banner-libros{
+	background-image: url(https://www.tor.com/wp-content/uploads/2015/06/WordsofRadiance_new_1920x1080.jpg);
+	background-position-y: center;
+	background-position-x: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.modal-content{
+	background: #01426C!important;
+	color: whitesmoke;
+}
+
+.boton-compra {
+	display: inline-block;
+	border-radius: 10px;
+	padding: .3em;
+	background-color: #EDD480;
+	color:black;
+	text-decoration: none;
+}
+
+/*Para la pagina de contacto*/
+
+#mensaje {
+	min-height: 10em;
+}
+
+.rechazado {
+	color: red;
+	visibility: hidden;
+}
+
+input {
+	border:none!important;
+}
+
+#mensaje {
+	resize: none!important;
+}
+
+#simbolo {
+	margin:1em;
+	max-width: 100%;
+	height: auto;
+}
+
+/*Para la página del Cosmere*/
+
+#banner-cosmere {
+	background-image: url("cosmere/medios/imagenes/stormlight.jpg");
+	min-height: 200px;
+	display: flex;
+	justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    font-size: 2em;
+    text-shadow: 0 0 10px black;
+	background-position-y: center;
+	background-position-x: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#banner-cosmere h1 {
+	font-family: bahnschrift;
+	font-size: 1.5em;
+	color: #EDD480!important;
+}
+
+#div-sonido{
+	position: fixed;
+	top: 5px;
+	right: 10px;
+}
+
+#slider-musica{
+	-webkit-appearance: slider-vertical;
+	position:absolute;
+	top:130px;
+	right:0;
+}
+
+#on-of {
+	height: 50px;
+	width: auto;
+	border-radius: 15px;
+	opacity: 0.7;
+
+	position:absolute;
+	top:70px;
+	right:40px;
+}
